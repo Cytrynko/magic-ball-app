@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #262625;
+}
+
+#circle {
+    position: relative;
+    background-color: none;
+    width: 90vh;
+    height: 90vh; 
+    border-radius: 50%;
+    margin: 0.9em auto;
+    border: 3px solid #9ec41d;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-double {
+    width: 76vh;
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    border: 7px solid #9ec41d;
+    border-radius: 50%;
+}
+
+.circle-triple {
+    width: 64vh;
+    height: 64vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9ec41d;
+    border-radius: 50%;
+}
+
+.main-circle-shake {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    0% {left:0px; right:0px;}
+    10% {left:30px; right:0px;}
+    20% {left:-30px; right:60px;}
+    30% {left:30px; right:0px;}
+    40% {left:-30px; right:60px;}
+    50% {left:30px; right:0px;}
+    60% {left:-30px; right:60px;}
+    70% {left:30px; right:0px;}
+    80% {left:-30px; right:60px;}
+    90% {left:30px; right:0px;}
+    100% {left:0px; right:0px;}
+}
+
+.circle-inside {
+    /* background-color: #a4c434;
+    box-shadow: inset 0px 0px 40px 30px #043008; */
+    background: rgb(159,192,52);
+    background: radial-gradient(circle, rgba(159,192,52,1) 48%, rgba(0,21,2,1) 70%);
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    /* border: 2px solid #001702; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delta {
+    width: 30vh;
+    height: 30vh;
+    background-color: #224920;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    /* background-color: orange; */
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    padding: 0 1em;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.5px;
+}
+
+p:hover {
+    cursor: pointer;
+}
